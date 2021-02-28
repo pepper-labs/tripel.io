@@ -88,6 +88,38 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5vw;
+  padding: 150px 0;
+  position: relative;
+}
+
+.highlights:before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -300px;
+  height: 800px;
+  background-image: url('/pin.svg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.highlights:after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1000px;
+  background-image: url('/plane.svg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 10;
 }
 
 @media (max-width: 700px) {
@@ -99,11 +131,16 @@
 .highlights h2 {
   font-size: 2.3em;
   margin: 0 0 5em;
+  position: relative;
+  z-index: 20;
 }
 
 .highlight {
   padding: 2.5vw;
   box-shadow: 0 30px 60px rgba(0, 37, 86, 0.1);
+  z-index: 20;
+  position: relative;
+  background-color: #fff;
 }
 
 .highlight + .highlight {
