@@ -92,6 +92,12 @@
   position: relative;
 }
 
+@media (max-width: 700px) {
+  .highlights {
+    padding-top: 0;
+  }
+}
+
 .highlights:before {
   display: block;
   content: '';
@@ -135,6 +141,13 @@
   z-index: 20;
 }
 
+@media (max-width: 700px) {
+  .highlights h2 {
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
 .highlight {
   padding: 2.5vw;
   box-shadow: 0 30px 60px rgba(0, 37, 86, 0.1);
@@ -150,6 +163,7 @@
 @media (max-width: 700px) {
   .highlight {
     padding: 7vw;
+    margin-bottom: 2vh;
   }
 }
 
