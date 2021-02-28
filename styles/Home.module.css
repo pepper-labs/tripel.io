@@ -5,12 +5,6 @@
 .hero {
 }
 
-.hero__wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 50px 25px;
-}
-
 .hero__logo {
 }
 
@@ -41,7 +35,6 @@
 
 .hero__content__text {
   flex: 1 1 55%;
-  color: #050E62;
   display: flex;
   align-items: center;
   font-size: 1.2em;
@@ -89,6 +82,101 @@
   width: 110%;
   margin-right: -10%;
   transform: translateX(20%);
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
+
+@media (max-width: 700px) {
+  .highlights {
+    display: block;
+  }
+}
+
+.highlights h2 {
+  font-size: 2.3em;
+  margin: 0 0 5em;
+}
+
+.highlight {
+  padding: 2.5vw;
+  box-shadow: 0 30px 60px rgba(0, 37, 86, 0.1);
+}
+
+.highlight + .highlight {
+  margin-top: 5vw;
+}
+
+@media (max-width: 700px) {
+  .highlight {
+    padding: 7vw;
+  }
+}
+
+.highlight--bottom-right-rounded {
+  border-radius: 2vw 2vw 5vw 2vw;
+}
+
+.highlight--top-right-rounded {
+  border-radius: 2vw 5vw 2vw 2vw;
+}
+
+.highlight__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+.highlight__problems {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.highlight__problems li {
+  padding: 2vh 0;
+  margin-left: 60px;
+  position: relative;
+  display: block;
+}
+
+.highlight__problems li:last-child {
+  padding-bottom: 0;
+}
+
+.highlight__problems li:before {
+  display: block;
+  content: '';
+  width: 40px;
+  height: 8px;
+  position: absolute;
+  left: -60px;
+  top: 2vh;
+  margin-top: 0.4em;
+  border-radius: 10px;
+}
+
+.highlight--yellow .highlight__problems li:before {
+  background-color: #FFC736;
+}
+
+.highlight--blue .highlight__problems li:before {
+  background-color: #026CF9;
+}
+
+.highlight--purple .highlight__problems li:before {
+  background-color: #BD00CD;
+}
+
+.highlight__title__icon {}
+
+.highlight__title__text {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.8em;
 }
 
 @media (max-width: 700px) {
