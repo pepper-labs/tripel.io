@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import ProductHighlights from '../components/ProductHighlights';
 import Hero from '../components/Hero';
 import Premise from '../components/Premise';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
 
         <Premise/>
       </main>
+
+      <Footer/>
     </>
   );
 }
