@@ -1,0 +1,27 @@
+.premise h3 {
+  font-size: 2.3em;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+.premise__comparison {
+  display: flex;
+}
+
+.premise__comparison img {
+  display: block;
+  margin: 0 50px;
+}
+
+.premise__comparison p {
+  font-size: 1.2em;
+}
+
+.premise__comparison u {
+  text-decoration-color: #FFC736;
+  text-decoration-thickness: 8px;
+  text-underline-offset: -4px;
+  text-decoration-skip-ink: none;
+  display: inline-block;
+}
