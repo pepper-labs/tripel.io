@@ -13,10 +13,15 @@ export default function Footer() {
             Join our platform as an early user and let us build the platform around your specific needs
           </p>
 
-          <div className={styles.footer__input}>
-            <input type="email" placeholder="Type your email address..."/>
+          <form action="https://tripel.us1.list-manage.com/subscribe/post?u=30e1f6e953412de54f837ee24&amp;id=4518c3a8c1"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+                noValidate className={styles.footer__input}>
+            <input type="email" placeholder="Type your email address..." name="EMAIL" id="mce-EMAIL"/>
+            <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+              <input type="text" name="b_30e1f6e953412de54f837ee24_4518c3a8c1" tabIndex={-1} defaultValue=""/>
+            </div>
             <button>Sing up</button>
-          </div>
+          </form>
         </div>
 
         <div>
@@ -29,5 +34,5 @@ export default function Footer() {
         <a className={styles.footer__cta} href="mailto:hello@tripel.io">hello@tripel.io</a>
       </div>
     </div>
-  </footer>
+  </footer>;
 }
