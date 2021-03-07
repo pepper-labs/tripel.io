@@ -10,16 +10,16 @@ export default function Hero() {
       <div className={styles.hero__content}>
         <div className={styles.hero__content__text}>
           <div>
-            <h1>Look no further.</h1>
+            <h1>Your carefully <br/> selected favourites</h1>
 
             <p>
               With a premium recommendation platform we are transforming the recommendation and promotion experience for
               hosts, service providers and travellers alike.
             </p>
 
-            <a href="#" className={styles.hero__cta}>
+            <span className={styles.hero__cta}>
               All percent inspiration, no percent perspiration.
-            </a>
+            </span>
           </div>
         </div>
 

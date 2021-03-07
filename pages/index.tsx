@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import ProductHighlights from '../components/ProductHighlights';
 import Hero from '../components/Hero';
-import Premise from '../components/Premise';
+import Propositions from '../components/Propositions';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
 
         <ProductHighlights/>
 
-        <Premise/>
+        <Propositions/>
       </main>
 
       <Footer/>

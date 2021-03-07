@@ -20,15 +20,18 @@ export default function ProductHighlights() {
 
         <ul className={styles.highlight__problems}>
           <li>
-            Available activity options are vast, easily souring a vacation with decision fatigue and fomo
+            <strong>Available activity options are vast</strong>, making an educated decision a labor intensive feat -
+            tiring you instead of relaxing during an active trip
           </li>
 
           <li>
-            Ratings are polarised and influenced while recommendations are often driven by business interest
+            <strong>Ratings are not always reliable</strong>, while recommendations are often driven by pure business
+            interest
           </li>
 
           <li>
-            Traditional methods of receiving host recommendations are outdated (leaflets, guestbooks, city maps)
+            <strong>Outdated methods of receiving host recommendations</strong> are the standard (leaflets, guestbooks,
+            city maps)
           </li>
         </ul>
       </div>
@@ -46,15 +49,15 @@ export default function ProductHighlights() {
 
         <ul className={styles.highlight__problems}>
           <li>
-            Curating and managing a solid recommendation portfolio requires a lot of time and effort
+            <strong>Curating and managing a solid recommendation portfolio</strong> requires a lot of time and effort
           </li>
 
           <li>
-            Answering repetitive guest questions can make up to 40% of a receptionists time
+            <strong>Answering repetitive guest questions</strong> can make up to 40% of a receptionist’s time
           </li>
 
           <li>
-            No control over guest satisfaction when they use 3rd party sites
+            <strong>Little control over guest satisfaction</strong> when they use 3rd party sites for activity booking
           </li>
         </ul>
       </div>
@@ -70,15 +73,18 @@ export default function ProductHighlights() {
 
         <ul className={styles.highlight__problems}>
           <li>
-            Setting up and maintaining bilateral partner agreements or an affiliate network is cumbersome
+            <strong>Setting up and maintaining bilateral partner agreements</strong> or an affiliate network is
+            cumbersome
           </li>
 
           <li>
-            Spreading and updating information requires significant individual marketing and sales resources
+            <strong>Spreading and updating information</strong> requires significant individual marketing and sales
+            resources
           </li>
 
           <li>
-            As a starting company, or one with less resources it is often difficult to stand out in the noise
+            <strong>It is often difficult to stand out in the noise</strong> as a starting company, or one with less
+            resources
           </li>
         </ul>
       </div>

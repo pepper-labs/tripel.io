@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5vw;
-  padding: 150px 0;
+  padding: 150px 25px;
   position: relative;
 }
 
@@ -46,10 +46,15 @@
   .highlights {
     display: block;
   }
+
+  .highlights:after,
+  .highlights:before {
+    display: none;
+  }
 }
 
 .highlights h2 {
-  font-size: 2.3em;
+  font-size: 2em;
   margin: 0 0 5em;
   position: relative;
   z-index: 20;
@@ -63,7 +68,7 @@
 }
 
 .highlight {
-  padding: 2.5vw;
+  padding: 50px;
   box-shadow: 0 30px 60px rgba(0, 37, 86, 0.1);
   z-index: 20;
   position: relative;
@@ -108,6 +113,12 @@
   display: block;
 }
 
+@media (max-width: 700px) {
+  .highlight__problems li {
+    margin-left: 40px;
+  }
+}
+
 .highlight__problems li:last-child {
   padding-bottom: 0;
 }
@@ -116,12 +127,19 @@
   display: block;
   content: '';
   width: 40px;
-  height: 8px;
+  height: 4px;
   position: absolute;
   left: -60px;
   top: 2vh;
   margin-top: 0.4em;
   border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .highlight__problems li:before {
+    width: 25px;
+    left: -45px;
+  }
 }
 
 .highlight--yellow .highlight__problems li:before {
