@@ -20,7 +20,7 @@ export default function Footer() {
             <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
               <input type="text" name="b_30e1f6e953412de54f837ee24_4518c3a8c1" tabIndex={-1} defaultValue=""/>
             </div>
-            <button>Sing up</button>
+            <button>Sign up</button>
           </form>
         </div>
 
