@@ -8,7 +8,8 @@
 
 @media (max-width: 700px) {
   .highlights {
-    padding: 0 0 70px;
+    padding: 30px 0 70px;
+    gap: 0;
   }
 }
 
@@ -54,11 +55,14 @@
     display: flex;
     min-width: 80vw;
     margin-left: 10vw;
+    margin-right: 5vw;
   }
 
   .highlights > div + div {
     margin-left: 0;
+    margin-right: 0;
     flex: 1 0 180vw;
+    padding-right: 10vw;
   }
 
   .highlights:after,
@@ -67,17 +71,26 @@
   }
 }
 
-.highlights h2 {
+.title {
   font-size: 2em;
   margin: 0 0 5em;
   position: relative;
   z-index: 20;
 }
 
+.titleForMobile {
+  display: none;
+  font-size: 2em;
+  padding: 0 5%;
+}
+
 @media (max-width: 700px) {
-  .highlights h2 {
+  .title {
+    display: none;
+  }
+
+  .titleForMobile {
     display: block;
-    margin-bottom: 1em;
   }
 }
 
@@ -94,10 +107,6 @@
 }
 
 @media (max-width: 700px) {
-  .highlights h2 {
-    display: none;
-  }
-
   .highlight {
     padding: 7vw;
     margin-bottom: 2vh;
