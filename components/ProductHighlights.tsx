@@ -105,7 +105,7 @@ function Highlight(props: HighlightProps) {
   return <div ref={ref} className={cls(styles.highlight, ...(props.variants))}>
     <div className={styles.highlight__title}>
       <div className={styles.highlight__title__icon}>
-        <img src={props.icon} alt={props.title}/>
+        <img src={props.icon} alt={props.title} width="45" height="33"/>
       </div>
 
       <div className={styles.highlight__title__text}>{props.title}</div>

@@ -15,7 +15,7 @@ export default function Propositions() {
           </p>
         </div>
 
-        <img src="/sign.svg" alt="Sign"/>
+        <img src="/sign.svg" alt="Sign" width="41" height="56"/>
 
         <div>
           <Carousel timeout={CAROUSEL_TIMEOUT}/>
