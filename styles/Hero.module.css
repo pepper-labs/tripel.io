@@ -13,6 +13,7 @@
   width: 60%;
   overflow: hidden;
   background-image: url('/map.png');
+  background-image: url('/map.webp');
   background-size: cover;
   background-position: center center;
 }
@@ -66,6 +67,8 @@
   width: 110%;
   margin-right: -10%;
   transform: translateX(20%);
+  filter: drop-shadow(0px 30px 60px rgba(0, 0, 0, 0.15));
+  border-radius: 12px;
 }
 
 @media (max-width: 700px) {
@@ -99,5 +102,6 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero__map {
     background-image: url('/map@2x.png');
+    background-image: url('/map@2x.webp');
   }
 }
