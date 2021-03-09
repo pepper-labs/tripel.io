@@ -11,6 +11,7 @@ export default function Home() {
       <Head>
         <title>Tripelio</title>
         <link rel="icon" href="/favicon.ico"/>
+        <link rel="preload" href="/dashboard.webp" as="image"/>
       </Head>
 
       <main className={styles.main}>
