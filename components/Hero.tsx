@@ -27,7 +27,7 @@ export default function Hero() {
           <picture>
             <source srcSet="/dashboard.webp" type="image/webp"/>
             <source srcSet="/dashboard.jpg" type="image/jpeg"/>
-            <img src="/dashboard.jpg" alt="Product dashboard"/>
+            <img src="/dashboard.jpg" alt="Product dashboard" width="600" height="427"/>
           </picture>
         </div>
       </div>

@@ -35,6 +35,7 @@
 .footer__illustration {
   mix-blend-mode: color-burn;
   opacity: 0.8;
+  width: auto;
   height: 280px;
 }
 

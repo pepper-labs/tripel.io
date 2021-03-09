@@ -25,7 +25,8 @@ export default function Footer() {
         </div>
 
         <div>
-          <img className={styles.footer__illustration} src="/signup.svg" alt="Sign up for our beta program"/>
+          <img className={styles.footer__illustration} src="/signup.svg" alt="Sign up for our beta program" width="451"
+               height="280"/>
         </div>
       </div>
 
