@@ -82,6 +82,7 @@
   display: none;
   font-size: 2em;
   padding: 0 5%;
+  margin: 0;
 }
 
 @media (max-width: 700px) {
@@ -202,3 +203,29 @@
   font-weight: bold;
   font-size: 1.8em;
 }
+
+.carouselIndicator {
+  display: none;
+  width: 60px;
+  margin: -40px auto 0;
+  justify-content: space-between;
+}
+
+.carouselIndicator span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #EBEDF9;
+}
+
+.carouselIndicator span.active {
+  background-color: #AAB1BB;
+}
+
+@media (max-width: 700px) {
+  .carouselIndicator {
+    display: flex;
+  }
+}
+
