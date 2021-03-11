@@ -61,6 +61,9 @@
 
 .hero__content__preview {
   flex: 1 1 45%;
+  filter: drop-shadow(0px 30px 60px rgba(0, 0, 0, 0.15));
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .hero__content__preview img {
@@ -68,7 +71,6 @@
   height: auto;
   margin-right: -10%;
   transform: translateX(20%);
-  filter: drop-shadow(0px 30px 60px rgba(0, 0, 0, 0.15));
   border-radius: 12px;
 }
 
