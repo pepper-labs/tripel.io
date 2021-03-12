@@ -1,7 +1,7 @@
 import styles from '../styles/Propositions.module.css';
 import React from 'react';
 
-const CAROUSEL_TIMEOUT = 4000;
+const CAROUSEL_TIMEOUT = 6000;
 
 export default function Propositions() {
   return <section className={styles.propositions}>
