@@ -65,6 +65,12 @@
   line-height: 1.5em;
 }
 
+.propositions__highlight {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+}
+
 .propositions__highlight u {
   border-radius: 5px;
   padding: 3px 5px;

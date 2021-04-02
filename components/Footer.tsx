@@ -1,16 +1,18 @@
 import styles from '../styles/Footer.module.css';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Footer() {
+  const { t } = useTranslation('footer');
   return <footer className={styles.footer}>
     <div className="container">
       <div className={styles.footer__signup}>
         <div>
           <h4>
-            Sign up for our beta program
+            {t('Sign up for our beta program')}
           </h4>
 
           <p>
-            Join our platform as an early user and let us build the platform around your specific needs
+            {t('Join our platform as an early user and let us build the platform around your specific needs')}
           </p>
 
           <form action="https://tripel.us1.list-manage.com/subscribe/post?u=30e1f6e953412de54f837ee24&amp;id=4518c3a8c1"
@@ -20,7 +22,7 @@ export default function Footer() {
             <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
               <input type="text" name="b_30e1f6e953412de54f837ee24_4518c3a8c1" tabIndex={-1} defaultValue=""/>
             </div>
-            <button>Sign up</button>
+            <button>{t('Sign up')}</button>
           </form>
         </div>
 
@@ -31,7 +33,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.footer__contact}>
-        We would be over the moon to answer your questions, contact us with any request at&nbsp;
+        {t('We would be over the moon to answer your questions, contact us with any request at')}&nbsp;
         <a className={styles.footer__cta} href="mailto:hello@tripel.io">hello@tripel.io</a>
       </div>
     </div>

@@ -1,0 +1,17 @@
+{
+  "locales": [
+    "en",
+    "hu"
+  ],
+  "defaultLocale": "en",
+  "pages": {
+    "*": [
+      "footer"
+    ],
+    "/": [
+      "hero",
+      "product-highlights",
+      "propositions"
+    ]
+  }
+}
