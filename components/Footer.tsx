@@ -2,6 +2,7 @@ import styles from '../styles/Footer.module.css';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   const { t } = useTranslation('footer');
   return <footer className={styles.footer}>
     <div className="container">
@@ -35,6 +36,10 @@ export default function Footer() {
       <div className={styles.footer__contact}>
         {t('We would be over the moon to answer your questions, contact us with any request at')}&nbsp;
         <a className={styles.footer__cta} href="mailto:hello@tripel.io">hello@tripel.io</a>
+      </div>
+
+      <div className={styles.footer__privacy}>
+        Tripelio - {year} - <a href="/privacy-policy.pdf" className={styles.footer__cta} target="_blank">{t('Privacy policy')}</a>
       </div>
     </div>
   </footer>;
