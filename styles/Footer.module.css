@@ -101,3 +101,9 @@
   color: #fff;
   text-decoration: underline;
 }
+
+.footer__privacy {
+  text-align: center;
+  margin-top: 40px;
+  color: #000;
+}
