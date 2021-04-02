@@ -1,6 +1,8 @@
 import styles from '../styles/Hero.module.css';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Hero() {
+  const { t } = useTranslation('hero');
   return <section className={styles.hero}>
     <div className="container">
       <div className={styles.hero__logo}>
@@ -10,16 +12,11 @@ export default function Hero() {
       <div className={styles.hero__content}>
         <div className={styles.hero__content__text}>
           <div>
-            <h1>Your carefully <br/> selected favourites</h1>
+            <h1 dangerouslySetInnerHTML={{ __html: t('Your carefully selected favourites') }}/>
 
-            <p>
-              With a premium recommendation platform we are transforming the recommendation and promotion experience for
-              hosts, service providers and travellers alike.
-            </p>
+            <p>{t('promise')}</p>
 
-            <span className={styles.hero__cta}>
-              All percent inspiration, no percent perspiration.
-            </span>
+            <span className={styles.hero__cta}>{t('All percent inspiration, no percent perspiration')}</span>
           </div>
         </div>
 

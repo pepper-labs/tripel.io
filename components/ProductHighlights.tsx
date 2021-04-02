@@ -1,72 +1,50 @@
 import styles from '../styles/ProductHighlights.module.css';
 import { ReactNode, useEffect, useRef, useState } from 'react';
+import useTranslation from 'next-translate/useTranslation';
 
 const cls = (...classNames: string[]) => classNames.join(' ');
 
 export default function ProductHighlights() {
+  const { t } = useTranslation('product-highlights');
   const [activePageNumber, setActivePageNumber] = useState(0);
   const activate = (index: number) => () => setActivePageNumber(index);
   return <>
-    <h2 className={styles.titleForMobile}>There is plenty of noise to cut through</h2>
+    <h2 className={styles.titleForMobile}>{t('There is plenty of noise to cut through')}</h2>
 
     <section className={cls(styles.highlights, 'container')}>
       <div>
-        <h2 className={styles.title}>There is plenty of noise to cut through</h2>
+        <h2 className={styles.title}>{t('There is plenty of noise to cut through')}</h2>
 
-        <Highlight icon="/travelers.svg" title="Travelers"
+        <Highlight icon="/travelers.svg" title={t('Travelers')}
                    variants={[styles['highlight--yellow'], styles['highlight--bottom-right-rounded']]}
                    onIntersect={activate(0)}>
-          <li>
-            <strong>Available activity options are vast</strong>, making an educated decision a labor intensive feat -
-            tiring you instead of relaxing during an active trip
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t('Available activity options are vast') }}/>
 
-          <li>
-            <strong>Ratings are not always reliable</strong>, while recommendations are often driven by pure business
-            interest
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t('Ratings are not always reliable') }}/>
 
-          <li>
-            <strong>Outdated methods of receiving host recommendations</strong> are the standard (leaflets, guestbooks,
-            city maps)
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t('Outdated methods of receiving host recommendations') }}/>
         </Highlight>
       </div>
 
       <div>
-        <Highlight icon="/hosts.svg" title="Hosts"
+        <Highlight icon="/hosts.svg" title={t('Hosts')}
                    variants={[styles['highlight--blue'], styles['highlight--bottom-right-rounded']]}
                    onIntersect={activate(1)}>
-          <li>
-            <strong>Curating and managing a solid recommendation portfolio</strong> requires a lot of time and effort
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t('Curating and managing a solid recommendation portfolio') }}/>
 
-          <li>
-            <strong>Answering repetitive guest questions</strong> can make up to 40% of a receptionist’s time
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t('Answering repetitive guest questions') }}/>
 
-          <li>
-            <strong>Little control over guest satisfaction</strong> when they use 3rd party sites for activity booking
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t('Little control over guest satisfaction') }}/>
         </Highlight>
 
-        <Highlight icon="/providers.svg" title="Providers"
+        <Highlight icon="/providers.svg" title={t('Providers')}
                    variants={[styles['highlight--purple'], styles['highlight--top-right-rounded']]}
                    onIntersect={activate(2)}>
-          <li>
-            <strong>Setting up and maintaining bilateral partner agreements</strong> or an affiliate network is
-            cumbersome
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t('Setting up and maintaining bilateral partner agreements') }}/>
 
-          <li>
-            <strong>Spreading and updating information</strong> requires significant individual marketing and sales
-            resources
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t('Spreading and updating information') }}/>
 
-          <li>
-            <strong>It is often difficult to stand out in the noise</strong> as a starting company, or one with less
-            resources
-          </li>
+          <li dangerouslySetInnerHTML={{ __html: t('It is often difficult to stand out in the noise') }}/>
         </Highlight>
       </div>
     </section>
