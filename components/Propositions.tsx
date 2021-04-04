@@ -37,11 +37,19 @@ function Carousel({ timeout }: { timeout: number }) {
   }, []);
 
   return <>
-    <p className={[styles.propositions__highlight, styles['propositions__highlight--yellow'], classNames[0]].join(' ')} dangerouslySetInnerHTML={{ __html: t('traveler') }}/>
+    <div
+      className={[styles.propositions__highlight, styles['propositions__highlight--yellow'], classNames[0]].join(' ')}>
+      <p dangerouslySetInnerHTML={{ __html: t('traveler') }}/>
+    </div>
 
-    <p className={[styles.propositions__highlight, styles['propositions__highlight--blue'], classNames[1]].join(' ')} dangerouslySetInnerHTML={{ __html: t('host') }}/>
+    <div className={[styles.propositions__highlight, styles['propositions__highlight--blue'], classNames[1]].join(' ')}>
+      <p dangerouslySetInnerHTML={{ __html: t('host') }}/>
+    </div>
 
-    <p className={[styles.propositions__highlight, styles['propositions__highlight--purple'], classNames[2]].join(' ')} dangerouslySetInnerHTML={{ __html: t('provider') }}/>
+    <div
+      className={[styles.propositions__highlight, styles['propositions__highlight--purple'], classNames[2]].join(' ')}>
+      <p dangerouslySetInnerHTML={{ __html: t('provider') }}/>
+    </div>
   </>;
 }
 
