@@ -3,7 +3,13 @@
   width: 100%;
 }
 
-.hero__map {
+@media (max-width: 700px) {
+  .hero__logo__img {
+    max-width: 120px;
+  }
+}
+
+  .hero__map {
   position: absolute;
   z-index: 10;
   top: 0;
