@@ -5,7 +5,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
   const { t } = useTranslation('footer');
   return <footer className={styles.footer}>
-    <div className="container">
+    <div className={['container', styles.footer__container].join(' ')}>
       <div className={styles.footer__signup}>
         <div>
           <h4>
