@@ -39,8 +39,9 @@ export default function Footer() {
       </div>
 
       <div className={styles.footer__privacy}>
-        Tripelio - {year} - <a href="/privacy-policy.pdf" className={styles.footer__cta}
-                               target="_blank">{t('Privacy policy')}</a>
+        Tripelio - {year}{' - '}
+        <a href="/privacy-policy.pdf" className={styles.footer__cta} target="_blank">{t('Privacy policy')}</a> {' - '}
+        <a href="/impressum.pdf" className={styles.footer__cta} target="_blank">{t('Impressum')}</a>
       </div>
     </div>
   </footer>;
