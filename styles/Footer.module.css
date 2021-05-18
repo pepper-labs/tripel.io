@@ -3,6 +3,7 @@
   border-top-right-radius: 10vw;
   padding: 5vh 5vh 0;
   color: #fff;
+  position: relative;
 }
 
 .footer__container {
@@ -98,6 +99,13 @@
 .footer__contact {
   color: #000;
   margin-top: 40px;
+  max-width: 80%;
+}
+
+@media (max-width: 700px) {
+  .footer__contact {
+    max-width: none;
+  }
 }
 
 .footer__cta {
@@ -111,4 +119,37 @@
   margin-top: 40px;
   color: #000;
   font-size: .8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .footer__privacy {
+    flex-flow: column-reverse;
+  }
+
+  .footer__privacy > div + div {
+    margin-bottom: 30px;
+  }
+}
+
+.footer__privacy > div {
+  flex: 1 1 20%;
+}
+
+.footer__content {
+  flex: 1 1 100%;
+}
+
+.footer__szechenyiLogo img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .footer__szechenyiLogo {
+    height: 150px;
+  }
 }

@@ -39,9 +39,21 @@ export default function Footer() {
       </div>
 
       <div className={styles.footer__privacy}>
-        Tripelio - {year}{' - '}
-        <a href="/privacy-policy.pdf" className={styles.footer__cta} target="_blank">{t('Privacy policy')}</a> {' - '}
-        <a href="/impressum.pdf" className={styles.footer__cta} target="_blank">{t('Impressum')}</a>
+        <div>
+          <img loading="lazy" width="200" src="/hiventures-logo.png" alt="Powered by HIVENTURES"/>
+        </div>
+
+        <div className={styles.footer__content}>
+          Tripelio - {year}{' - '}
+          <a href="/privacy-policy.pdf" className={styles.footer__cta} target="_blank">{t('Privacy policy')}</a> {' - '}
+          <a href="/impressum.pdf" className={styles.footer__cta} target="_blank">{t('Impressum')}</a>
+        </div>
+
+        <div/>
+      </div>
+
+      <div className={styles.footer__szechenyiLogo}>
+        <img loading="lazy" width="300" src="/szechenyi-2020.png" alt="Széchenyi 2020"/>
       </div>
     </div>
   </footer>;
