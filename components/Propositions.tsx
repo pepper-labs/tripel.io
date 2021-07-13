@@ -38,7 +38,7 @@ export default function Propositions() {
           
           <div className={styles.partners__poweredby}>
             <span>Powered by &nbsp;</span>
-            <img src="/tripelio.svg" height="30" alt="Logo"/></div>
+            <img src="/tripelio.svg" height="20" alt="Logo"/></div>
         </div>
         
         <div className={styles.partners__logos}>

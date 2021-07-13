@@ -40,7 +40,7 @@ export default function Footer() {
 
       <div className={styles.footer__privacy}>
         <div>
-          <img loading="lazy" width="200" src="/hiventures-logo.png" alt="Powered by HIVENTURES"/>
+          <img loading="lazy" width="150" src="/hiventures-logo.png" alt="Powered by HIVENTURES"/>
         </div>
 
         <div className={styles.footer__content}>

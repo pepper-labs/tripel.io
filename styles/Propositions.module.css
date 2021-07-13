@@ -73,7 +73,7 @@
 }
 
 .cta {
-  margin-top: 20px;
+  margin-top: 40px;
   border-radius: 10px;
   padding: 10px 40px;
   background-color: #f2673b;
@@ -122,6 +122,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
+  opacity: .5;
 }
 
 @media (max-width: 700px) {
