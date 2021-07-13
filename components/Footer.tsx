@@ -9,11 +9,11 @@ export default function Footer() {
       <div className={styles.footer__signup}>
         <div>
           <h4>
-            {t('Sign up for our beta program')}
+            {t('Sign up for our platform')}
           </h4>
 
           <p>
-            {t('Join our platform as an early user and let us build the platform around your specific needs')}
+            {t('Demo CTA')}
           </p>
 
           <form action="https://tripel.us1.list-manage.com/subscribe/post?u=30e1f6e953412de54f837ee24&amp;id=4518c3a8c1"
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <img className={styles.footer__illustration} src="/signup.svg" alt="Sign up for our beta program" width="451"
+          <img className={styles.footer__illustration} src="/signup.svg" alt="Sign up for our platform" width="451"
                height="280" loading="lazy"/>
         </div>
       </div>
