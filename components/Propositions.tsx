@@ -16,24 +16,24 @@ export default function Propositions() {
         <div>
           <div>
             <strong>
-              A Tripelio egy white-label programajánló platform
+              {t('About the platform')}
             </strong>
           </div>
           
           <ul>
-            <li>A szállásadók egy testreszabott katalógust állíthatnak fel előre elkészített válogatásunkból</li>
-            <li>Amellyel vendégeiknek ajánlani tudják az általuk kiválogatott külső és belső aktivitásokat</li>
-            <li>Letöltést nem igénylő, böngészőben megnyitható web app-unkkal</li>
+            <li>{t('hosts')}</li>
+            <li>{t('travelers')}</li>
+            <li>{t('app')}</li>
           </ul>
           
-          <a href="/introduction.pdf" target="_blank" className={styles.cta}>További részletek</a>
+          <a href="/introduction.pdf" target="_blank" className={styles.cta}>{t('More info')}</a>
         </div>
       </div>
       
       <div className={styles.partners}>
         <div>
           <div className={styles.partners__title}>
-            Akik minket választottak
+            {t('Our partners')}
           </div>
           
           <div className={styles.partners__poweredby}>
