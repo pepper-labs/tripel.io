@@ -3,7 +3,7 @@
     "en",
     "hu"
   ],
-  "defaultLocale": "en",
+  "defaultLocale": "hu",
   "pages": {
     "*": [
       "footer"
@@ -12,6 +12,9 @@
       "hero",
       "product-highlights",
       "propositions"
+    ],
+    "/terms-and-conditions/provider": [
+      "provider-terms"
     ]
   }
 }

@@ -9,7 +9,7 @@
   }
 }
 
-  .hero__map {
+.hero__map {
   position: absolute;
   z-index: 10;
   top: 0;
