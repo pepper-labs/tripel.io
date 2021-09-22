@@ -11,7 +11,8 @@
     "/": [
       "hero",
       "product-highlights",
-      "propositions"
+      "propositions",
+      "collections"
     ],
     "/terms-and-conditions/provider": [
       "provider-terms"

@@ -1,13 +1,13 @@
 import styles from '../styles/Collections.module.scss';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function Collections() {
+  const { t } = useTranslation('collections');
   return <section className={styles.collections}>
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.h1}>Fedezze fel kínálatunkat</h1>
-        <p>
-          Folyamatosan bővülő kínálatunkból akár percek alatt összerakhatja vendégei számára foglalható ajánló oldalát
-        </p>
+        <h1 className={styles.h1}>{t('Discover our collection')}</h1>
+        <p>{t('offers')}</p>
       </header>
     </div>
 
