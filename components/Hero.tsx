@@ -16,7 +16,7 @@ export default function Hero() {
 
             <p>{t('promise')}</p>
 
-            <span className={styles.hero__cta}>{t('All percent inspiration, no percent perspiration')}</span>
+            <a href="#subscribe" className={styles.hero__cta}>{t('Subscribe for a demo')}</a>
           </div>
         </div>
 

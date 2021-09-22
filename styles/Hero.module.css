@@ -55,10 +55,14 @@
 }
 
 .hero__cta {
-  background-color: #9FE3D7;
-  padding: 3px 5px;
-  border-radius: 2px;
-  line-height: 1.5em;
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 10px 40px;
+  background-color: #f2673b;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
 }
 
 .hero__cta:hover:after {

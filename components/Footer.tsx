@@ -8,6 +8,7 @@ export default function Footer() {
     <div className={['container', styles.footer__container].join(' ')}>
       <div className={styles.footer__signup}>
         <div>
+          <a id="subscribe"/>
           <h4>
             {t('Sign up for our platform')}
           </h4>
