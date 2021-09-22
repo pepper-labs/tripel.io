@@ -1,4 +1,4 @@
-import styles from '../styles/Hero.module.css';
+import styles from '../styles/Hero.module.scss';
 import useTranslation from 'next-translate/useTranslation';
 
 export default function Hero() {

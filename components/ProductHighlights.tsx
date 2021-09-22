@@ -1,4 +1,4 @@
-import styles from '../styles/ProductHighlights.module.css';
+import styles from '../styles/ProductHighlights.module.scss';
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import useTranslation from 'next-translate/useTranslation';
 

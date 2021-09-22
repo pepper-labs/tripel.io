@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../../styles/ProviderTermsAndConditions.module.css';
+import styles from '../../styles/ProviderTermsAndConditions.module.scss';
 import Footer from '../../components/Footer';
 import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
@@ -12,7 +12,7 @@ export default function ProviderTermsAndConditions() {
       <link rel="icon" href="/favicon.ico"/>
       <link rel="preload" href="/dashboard.webp" as="image"/>
     </Head>
-    
+
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <Link href="/" passHref>
@@ -20,14 +20,14 @@ export default function ProviderTermsAndConditions() {
         </Link>
       </div>
     </nav>
-    
+
     <div className={styles.map}/>
-    
+
     <main className={styles.main}>
       <div className={styles.title}>
         <h1>{t('title')}</h1>
       </div>
-      
+
       <div className={styles.content}>
         <ul>
           <li>
@@ -38,7 +38,7 @@ export default function ProviderTermsAndConditions() {
         </ul>
       </div>
     </main>
-    
+
     <Footer/>
   </div>;
 }
