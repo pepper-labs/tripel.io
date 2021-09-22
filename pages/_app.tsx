@@ -23,6 +23,7 @@ export default function MyApp({ Component, pageProps }) {
       <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_ANALYTICS_ID}`}/>
       <script dangerouslySetInnerHTML={{ __html: gtagScript }}/>
       <script dangerouslySetInnerHTML={{ __html: hotjarScript }}/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     </Head>
     <Component {...pageProps} />
   </>;
