@@ -49,6 +49,12 @@ export default function Propositions() {
           <img height="60" src="/topart-hotel.png" alt="Tópart Hotel"/>
         </div>
       </div>
+
+      <div className={styles.referenceCtaContainer}>
+        <a href="https://annagrandhotel.tripel.io" target="_blank" rel="noreferrer noopener" className={styles.cta}>
+          {t('Check out a reference')}
+        </a>
+      </div>
     </div>
   </section>;
 }

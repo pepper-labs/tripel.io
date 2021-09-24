@@ -138,3 +138,11 @@
   display: flex;
   align-items: center;
 }
+
+.referenceCtaContainer {
+  text-align: right;
+
+  @media (max-width: 700px) {
+    text-align: center;
+  }
+}
