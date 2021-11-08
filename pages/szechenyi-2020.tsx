@@ -48,7 +48,7 @@ export default function () {
             <h3>Szerződött támogatás összege</h3>
           </header>
 
-          <p>15.000 Ft</p>
+          <p>45 000 000 Ft</p>
         </section>
 
         <section>
