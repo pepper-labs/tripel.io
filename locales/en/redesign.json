@@ -1,7 +1,25 @@
 {
   "hero": {
-    "h1": "Vendég interakciók új szintre emelve",
-    "p": "Guest management platformunkkal vendégei utazását élménytelivé és front office működését hatékonyabbá teheti",
-    "button": "Szállodai információk"
+    "h1": "Supercharging your <0/>guest interactions",
+    "p": "With our guest management platform you can increase guest satisfaction while reducing front office workload",
+    "button": "Book a demo"
+  },
+  "details": {
+    "hostInfo": {
+      "title": "Hotel information",
+      "p": "Assemble a tailored guest information book easily, displaying all relevant information for their stay"
+    },
+
+    "upsell": {
+      "title": "Up-selling & cross-selling",
+      "p": "Suggest additional services for extra revenue and offer instantly bookable nearby activities and restaurants"
+    },
+
+    "communication": {
+      "title": "Communication",
+      "p": "Provide a convenient feedback and communication interface before and during your guests stay"
+    },
+
+    "moreInfo": "More information"
   }
 }
