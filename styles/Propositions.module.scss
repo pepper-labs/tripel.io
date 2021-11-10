@@ -83,14 +83,20 @@
   display: inline-block;
 }
 
-.partners {
+.partnersContainer {
   margin-top: 100px;
+
+  @media (max-width: 700px) {
+    margin-top: 50px;
+  }
+}
+
+.partners {
   display: flex;
 }
 
 @media (max-width: 700px) {
   .partners {
-    margin-top: 50px;
     display: block;
   }
 }

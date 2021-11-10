@@ -16,6 +16,11 @@
     ],
     "/terms-and-conditions/provider": [
       "provider-terms"
+    ],
+    "/redesign": [
+      "redesign",
+      "propositions",
+      "collections"
     ]
   }
 }

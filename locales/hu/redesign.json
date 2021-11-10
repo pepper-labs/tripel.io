@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "h1": "Vendég interakciók <0/>új szintre emelve",
+    "p": "Guest management platformunkkal vendégei utazását élménytelivé és front office működését hatékonyabbá teheti",
+    "button": "Termék demó feliratkozás"
+  },
+  "details": {
+    "hostInfo": {
+      "title": "Szállodai információk",
+      "p": "Egy testre szabott vendég tájékoztatót állíthat össze könnyedén, összegyűjtve minden releváns információt"
+    },
+
+    "upsell": {
+      "title": "Up-selling és cross-selling",
+      "p": "Ajánlja szolgáltatásait extra bevételért és tegyen foglalhatóvá környékbeli programokat, éttermeket"
+    },
+
+    "communication": {
+      "title": "Kommunikáció",
+      "p": "Vendégei tartózkodása előtt és alatt kényelmes kommunikációs és visszajelzési felületet biztosítva"
+    },
+
+    "moreInfo": "További részletek"
+  }
+}

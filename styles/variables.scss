@@ -1,0 +1,30 @@
+@use "sass:math";
+
+$contentPaddingSize: 20px;
+$maxContentWidth: 1200px;
+$contentPadding: $contentPaddingSize calc(#{math.div($contentPaddingSize, 2)} + env(safe-area-inset-right)) $contentPaddingSize calc(#{math.div($contentPaddingSize, 2)} + env(safe-area-inset-left));
+$contentWidth: calc(90% - #{$contentPaddingSize});
+
+$phoneWidth: 1000px;
+$maxScreenWidth: 1920px;
+
+$textColor: #00195f;
+$grey: #f7f8fa;
+
+@mixin phone {
+  @media (max-width: #{$phoneWidth}) {
+    @content;
+  }
+}
+
+@mixin ipad-portrait {
+  @media (width: 768px) and (height: 1024px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin ipad-landscape {
+  @media (height: 768px) and (width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}

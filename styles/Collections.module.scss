@@ -1,7 +1,5 @@
 @use "sass:math";
-
-$phoneWidth: 700px;
-$maxContentWidth: 1200px;
+@import "variables";
 
 @mixin phone {
   @media (max-width: #{$phoneWidth}) {
@@ -10,9 +8,8 @@ $maxContentWidth: 1200px;
 }
 
 .collections {
-  margin: 50px 0;
   padding: 50px 0 35px 0;
-  background-color: #f8f8f8;
+  background-color: $grey;
 
   @include phone {
     padding-bottom: 5%;
@@ -20,9 +17,10 @@ $maxContentWidth: 1200px;
 }
 
 .container {
-  padding: 0 calc(25px + env(safe-area-inset-right)) 0 calc(25px + env(safe-area-inset-left));
+  padding: 0 calc(env(safe-area-inset-right)) 0 calc(env(safe-area-inset-left));
   max-width: $maxContentWidth;
   margin: 0 auto;
+  width: 90%;
 }
 
 .header {
@@ -42,7 +40,15 @@ $maxContentWidth: 1200px;
 .scroll {
   overflow-y: auto;
   scroll-snap-type: x mandatory;
-  padding: 0 25px 15px;
+  padding: 0 0 15px;
+
+  @include phone {
+    padding: 0 5% 15px;
+  }
+
+  @include ipad-landscape {
+    padding: 0 5% 15px;
+  }
 
   ::-webkit-scrollbar {
     width: 10px;
