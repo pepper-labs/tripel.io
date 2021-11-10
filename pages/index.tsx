@@ -15,6 +15,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/mobile-hero-bg.webp" as="image" type="image/webp" media="(max-width: 768px)" />
         <link rel="preload" href="/hero-bg.webp" as="image" type="image/webp" media="(min-width: 769px)" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
       </Head>
 
       <main className={styles.main}>
