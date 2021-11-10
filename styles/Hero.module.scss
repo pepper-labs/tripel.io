@@ -1,3 +1,11 @@
+@import "variables";
+
+.hero {
+  @include phone {
+    font-size: 1.3rem;
+  }
+}
+
 .hero__logo__img {
   max-width: 150px;
   width: 100%;

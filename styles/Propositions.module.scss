@@ -1,5 +1,12 @@
+@import "variables";
+
 .propositions {
+  padding: 50px 0;
   margin-bottom: 50px;
+
+  @include phone {
+    font-size: 1.3rem;
+  }
 }
 
 .propositions h3 {
