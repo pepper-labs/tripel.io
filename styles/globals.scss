@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
+@import "variables";
+
 html {
-  font-size: 11pt;
+  @include phone {
+    font-size: 10pt;
+  }
+
+  @include ipad-landscape {
+    font-size: 11pt;
+  }
 }
 
 html,

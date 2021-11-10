@@ -87,7 +87,16 @@ export default function Redesign() {
               </div>
             </div>
 
-            <Partners />
+            <div className={styles.partnerContainer}>
+              <Partners />
+            </div>
+
+            <div className={styles.reference}>
+              <a href="https://annagrandhotel.tripel.io/?utm_source=landing&utm_medium=web" target="_blank"
+                rel="noreferrer noopener" className={styles.button}>
+                <Trans i18nKey="redesign:reference" />
+              </a>
+            </div>
           </div>
 
           <Collections />
