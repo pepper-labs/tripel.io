@@ -11,6 +11,9 @@ $maxScreenWidth: 1920px;
 $textColor: #00195f;
 $grey: #f7f8fa;
 
+$fontSize: 1.2rem;
+$lineHeight: 1.6rem;
+
 @mixin phone {
   @media (max-width: #{$phoneWidth}) {
     @content;

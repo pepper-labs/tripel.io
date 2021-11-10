@@ -1,8 +1,5 @@
 @import "./variables";
 
-$fontSize: 1.4rem;
-$lineHeight: 1.8rem;
-
 .main {
   color: $textColor;
 
@@ -92,7 +89,7 @@ $lineHeight: 1.8rem;
   padding: 10px 15px;
   font-weight: 600;
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: $fontSize;
   cursor: pointer;
 }
 
