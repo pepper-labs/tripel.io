@@ -1,5 +1,6 @@
-import styles from '../styles/Footer.module.scss';
 import useTranslation from 'next-translate/useTranslation';
+import Image from 'next/image';
+import styles from '../styles/Footer.module.scss';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -8,7 +9,7 @@ export default function Footer() {
     <div className={['container', styles.footer__container].join(' ')}>
       <div className={styles.footer__signup}>
         <div>
-          <a id="subscribe"/>
+          <a id="subscribe" />
           <h4>
             {t('Sign up for our platform')}
           </h4>
@@ -18,19 +19,19 @@ export default function Footer() {
           </p>
 
           <form action="https://tripel.us1.list-manage.com/subscribe/post?u=30e1f6e953412de54f837ee24&amp;id=4518c3a8c1"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
-                noValidate className={styles.footer__input}>
-            <input type="email" placeholder={t('Type your email address')} name="EMAIL" id="mce-EMAIL"/>
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+            noValidate className={styles.footer__input}>
+            <input type="email" placeholder={t('Type your email address')} name="EMAIL" id="mce-EMAIL" />
             <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-              <input type="text" name="b_30e1f6e953412de54f837ee24_4518c3a8c1" tabIndex={-1} defaultValue=""/>
+              <input type="text" name="b_30e1f6e953412de54f837ee24_4518c3a8c1" tabIndex={-1} defaultValue="" />
             </div>
             <button>{t('Sign up')}</button>
           </form>
         </div>
 
         <div>
-          <img className={styles.footer__illustration} src="/signup.svg" alt="Sign up for our platform" width="451"
-               height="280" loading="lazy"/>
+          <Image className={styles.footer__illustration} src="/signup.svg" alt="Sign up for our platform" width="451"
+            height="280" loading="lazy" decoding="async" />
         </div>
       </div>
 
@@ -41,7 +42,8 @@ export default function Footer() {
 
       <div className={styles.footer__privacy}>
         <div>
-          <img loading="lazy" width="150" src="/hiventures-logo.png" alt="Powered by HIVENTURES"/>
+          <Image decoding="async" loading="lazy" width="150" height="39" src="/hiventures-logo.png"
+            alt="Powered by HIVENTURES" />
         </div>
 
         <div className={styles.footer__content}>
@@ -50,11 +52,12 @@ export default function Footer() {
           <a href="/impressum.pdf" className={styles.footer__cta} target="_blank">{t('Impressum')}</a>
         </div>
 
-        <div/>
+        <div />
       </div>
 
       <div className={styles.footer__szechenyiLogo}>
-        <img loading="lazy" width="300" src="/szechenyi-2020.png" alt="Széchenyi 2020"/>
+        <Image decoding="async" loading="lazy" width="300" height="207.16" src="/szechenyi-2020.png"
+          alt="Széchenyi 2020" />
       </div>
     </div>
   </footer>;

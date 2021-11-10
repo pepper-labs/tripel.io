@@ -1,25 +1,26 @@
-import styles from '../styles/Szechenyi2020.module.scss';
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import Footer from '../components/Footer';
+import styles from '../styles/Szechenyi2020.module.scss';
 
 export default function Szechenyi2020() {
   return <div className={styles.container}>
     <Head>
       <title>Tripelio</title>
-      <link rel="icon" href="/favicon.ico"/>
-      <link rel="preload" href="/dashboard.webp" as="image"/>
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="preload" href="/dashboard.webp" as="image" />
     </Head>
 
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <Link href="/" passHref>
-          <a><img src="/tripelio.svg" alt="Tripelio" width="150" height="42"/></a>
+          <a><Image src="/tripelio.svg" alt="Tripelio" width="150" height="42" /></a>
         </Link>
       </div>
     </nav>
 
-    <div className={styles.map}/>
+    <div className={styles.map} />
 
     <main className={styles.main}>
       <div className={styles.title}>
@@ -88,6 +89,6 @@ export default function Szechenyi2020() {
       </div>
     </main>
 
-    <Footer/>
+    <Footer />
   </div>;
 }

@@ -1,5 +1,6 @@
 import Trans from 'next-translate/Trans';
 import Head from 'next/head';
+import Image from 'next/image';
 import React from 'react';
 import Collections from '../components/Collections';
 import Footer from '../components/Footer';
@@ -20,7 +21,7 @@ export default function Index() {
         <section className={styles.hero}>
           <div className={styles.container}>
             <div className={styles.logo}>
-              <img src="/tripelio.svg" alt="Tripelio" width="150" height="42" />
+              <Image src="/tripelio.svg" alt="Tripelio" width="150" height="42" />
             </div>
 
             <h1 className={styles.h1}>
@@ -44,7 +45,8 @@ export default function Index() {
                 <picture>
                   <source srcSet="/webapp.webp" type="image/webp" />
                   <source srcSet="/webapp.jpg" type="image/jpeg" />
-                  <img src="/webapp.jpg" alt="Check out one of our partner's live app" width="800" height="853" />
+                  <Image decoding="async" loading="lazy" src="/webapp.jpg" alt="Check out one of our partner's live app"
+                    width="800" height="853" />
                 </picture>
               </div>
 
