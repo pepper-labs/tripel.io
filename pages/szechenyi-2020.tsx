@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '../components/Footer';
 
-export default function () {
+export default function Szechenyi2020() {
   return <div className={styles.container}>
     <Head>
       <title>Tripelio</title>

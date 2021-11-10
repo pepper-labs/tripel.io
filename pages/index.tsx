@@ -24,7 +24,7 @@ export default function Index() {
             </div>
 
             <h1 className={styles.h1}>
-              <Trans i18nKey="home:hero.h1" components={[<br />]} />
+              <Trans i18nKey="home:hero.h1" components={[<br key="br" />]} />
             </h1>
 
             <p className={styles.p}>
