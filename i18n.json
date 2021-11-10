@@ -8,18 +8,12 @@
     "*": [
       "footer"
     ],
-    "/": [
-      "hero",
-      "product-highlights",
-      "propositions",
-      "collections"
-    ],
     "/terms-and-conditions/provider": [
       "provider-terms"
     ],
-    "/redesign": [
-      "redesign",
-      "propositions",
+    "/": [
+      "home",
+      "partners",
       "collections"
     ]
   }

@@ -1,9 +1,9 @@
 import useTranslation from 'next-translate/useTranslation';
 import React from 'react';
-import styles from '../styles/Propositions.module.scss';
+import styles from '../styles/Partners.module.scss';
 
 export default function Partners() {
-  const { t } = useTranslation('propositions');
+  const { t } = useTranslation('partners');
 
   return <div className={styles.partners}>
     <div>
