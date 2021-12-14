@@ -133,6 +133,7 @@
 @media (max-width: $phoneWidth) {
   .footer__privacy {
     flex-flow: column-reverse;
+    margin-bottom: 80px;
   }
 
   .footer__privacy > div + div {
@@ -148,14 +149,17 @@
   flex: 1 1 100%;
 }
 
-.footer__szechenyiLogo img {
+.footer__szechenyiLogo {
   position: absolute;
   right: 0;
+  font-size: 0;
   bottom: 0;
 }
 
 @media (max-width: $phoneWidth) {
   .footer__szechenyiLogo {
-    height: 150px;
+    img {
+      height: 150px !important;
+    }
   }
 }
