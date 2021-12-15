@@ -1,5 +1,6 @@
 import useTranslation from 'next-translate/useTranslation';
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Footer.module.scss';
 
 export default function Footer() {
@@ -56,8 +57,10 @@ export default function Footer() {
       </div>
 
       <div className={styles.footer__szechenyiLogo}>
-        <Image decoding="async" loading="lazy" width="300" height="207.16" src="/szechenyi-2020.png"
-          alt="Széchenyi 2020" />
+        <Link href="/szechenyi-2020">
+          <Image decoding="async" loading="lazy" width="300" height="207.16" src="/szechenyi-2020.png"
+            alt="Széchenyi 2020" />
+        </Link>
       </div>
     </div>
   </footer>;
