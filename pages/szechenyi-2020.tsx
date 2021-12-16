@@ -57,7 +57,7 @@ export default function Szechenyi2020() {
             <h3>Projekt tervezett befejezési dátuma</h3>
           </header>
 
-          <p>2021 Q4</p>
+          <p>2022 Q3</p>
         </section>
 
         <section>
