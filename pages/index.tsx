@@ -95,7 +95,7 @@ export default function Index() {
             </div>
 
             <div className={styles.reference}>
-              <a href="http://hotelorion.tripel.io/?utm_source=landing&utm_medium=web" target="_blank"
+              <a href="https://grandbudapest.tripel.io/?utm_source=landing&utm_medium=web" target="_blank"
                 rel="noreferrer noopener" className={styles.button}>
                 <Trans i18nKey="home:reference" />
               </a>
