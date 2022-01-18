@@ -15,6 +15,9 @@
       "home",
       "partners",
       "collections"
+    ],
+    "/terms-and-conditions/host": [
+      "host-terms"
     ]
   }
 }
